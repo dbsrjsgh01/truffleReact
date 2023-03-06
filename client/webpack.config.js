@@ -21,12 +21,13 @@ module.exports = {
       {
         test: /\.jsx?$/i,
         use: [
-          {
-            loader: "babel-loader",
-            options: {
-              presets: [["@babel/preset-react", { runtime: "automatic" }]],
-            },
-          },
+          // {
+          //   loader: "babel-loader",
+          //   options: {
+          //     presets: [["@babel/preset-react", { runtime: "automatic" }]],
+          //   },
+          // },
+          "source-map-loader"
         ],
         exclude: /node_modules/,
       },
